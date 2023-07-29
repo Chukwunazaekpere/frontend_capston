@@ -2,8 +2,8 @@ import React from "react";
 
 const ContactUs = () => {
     return(
-        <div>
-            <p>Contact Us</p>
+        <div className="row d-flex">
+            <h1 className="font-weight-bold text-center">Contact Us</h1>
         </div>
     )
 };

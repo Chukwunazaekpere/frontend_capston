@@ -2,6 +2,7 @@ import React from "react";
 import BookingForm from "../components/BookingForm";
 
 
+
 const BookingPage = () => {
     return(
         <div className="row d-flex justify-content-center">
