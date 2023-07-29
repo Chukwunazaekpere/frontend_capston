@@ -49,12 +49,15 @@ const BookingForm = () => {
         if(act.toLowerCase() === 'confirm'){
             formState.confirmText = "Your reservation was successful"
         }else{
-            formState.confirmText = "Confirm Booking"
+            formState.confirmText = "Confirm Booking";
+            formState.confirmBooking = true;
         }
         setFormState({...formState});
-        if(act.toLowerCase() === 'confirm'){
-            navigate("/home")
-        }
+        setTimeout(() => {
+            if(act.toLowerCase() === 'confirm'){
+                navigate("/home")
+            }
+        }, 4000);
     }
     return(
         <div className="col-6">
